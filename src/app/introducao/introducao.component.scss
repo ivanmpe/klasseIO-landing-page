@@ -1,0 +1,33 @@
+    .introducao {
+        background: rgb(178, 206, 249);
+        background: linear-gradient(180deg, rgba(178, 206, 249, 1) 5%, rgba(212, 222, 252, 0.9948354341736695) 100%);
+        width: 100%;
+    }
+
+    .informativo {
+        width: 60%;
+        &__titulo {
+            font-size: 3rem;
+            font-weight: bolder;
+            line-height: 3rem;
+        }
+        &__texto {
+            margin-top: 5%;
+            font-size: 1.2rem;
+            line-height: 2.0rem;
+            color: gray;
+            font-weight: 400;
+        }
+        img {
+            margin-top: 5%;
+            margin-right: 5%;
+            cursor: pointer;
+        }
+    }
+
+    .imagens {
+        padding: 3% 10% 3% 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }

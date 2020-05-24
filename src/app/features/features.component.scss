@@ -1,0 +1,40 @@
+.features {
+    border-radius: 0px 0px 80px 80px;
+    background: rgb(178, 206, 249);
+    background: linear-gradient(180deg, white 10%, rgba(247, 248, 251, 0.9948354342) 20%, #b2cef9 100%);
+}
+
+.texto {
+    padding: 5% 10% 5% 20%;
+    &__titulo {
+        font-size: 2.0rem;
+        font-weight: bolder;
+        line-height: 2.2rem;
+    }
+    &__corpo {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 2rem;
+        padding-bottom: 5%;
+        border-bottom: gray solid 2px;
+    }
+}
+
+.ui.card {
+    border-radius: 20px;
+    height: 200px;
+}
+
+.ui.card.content {
+    padding: 15%;
+}
+
+.icon-grid {
+    color: #3a83f0;
+    background-color: #ecf3fe;
+    padding: 2%;
+    margin-bottom: 10px;
+    width: max-content;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}

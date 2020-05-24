@@ -1,0 +1,26 @@
+.texto {
+    padding: 5% 20%;
+    &__titulo {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        line-height: 5rem;
+    }
+    &__corpo {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 2rem;
+        padding-bottom: 5%;
+        border-bottom: gray solid 2px;
+    }
+}
+
+.contato {
+    padding: 0 20%;
+}
+
+.coluna-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: justify
+}
