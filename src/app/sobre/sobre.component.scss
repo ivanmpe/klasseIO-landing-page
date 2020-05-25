@@ -22,5 +22,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: justify
+    align-items: justify;
+}
+
+.coluna-imagem {
+    border-radius: 0px 0px 80px 80px;
+    background: rgb(178, 206, 249);
+    background: linear-gradient(180deg, white 10%, rgba(247, 248, 251, 0.9948354342) 20%, #dee8f7 100%);
 }

@@ -5,8 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { IntroducaoComponent } from './introducao/introducao.component';
-import { QuantidadeComponent } from './quantidade/quantidade.component';
-import { ComoUsarComponent } from './como-usar/como-usar.component';
+import { SobreComponent } from './sobre/sobre.component';
 import { FeedbacksComponent } from './feedbacks/feedbacks.component';
 import { DownloadComponent } from './download/download.component';
 import { BottombarComponent } from './bottombar/bottombar.component';
@@ -17,8 +16,7 @@ import { FeaturesComponent } from './features/features.component';
     AppComponent,
     NavbarComponent,
     IntroducaoComponent,
-    QuantidadeComponent,
-    ComoUsarComponent,
+    SobreComponent,
     FeedbacksComponent,
     DownloadComponent,
     BottombarComponent,
