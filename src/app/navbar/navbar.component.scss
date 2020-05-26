@@ -53,14 +53,11 @@
         display: none;
     }
     #menuCelular {
-        /*         visibility: visible;
-
- */
-        display: none;
+        visibility: visible;
+        font-size: 0.9rem;
+        margin: 0;
+        background-color: transparent;
+        width: 100%;
+        justify-content: center;
     }
-}
-
-#menuCelular {
-    top: 0;
-    margin-top: auto;
 }
