@@ -1,32 +1,44 @@
-.texto {
+@import "../../consts.scss";
+@import "../../mixins.scss";
+
+.about {
+  padding: 10px;
+
+  .texto {
     padding: 5% 15%;
+
     &__titulo {
-        font-size: 2.5rem;
-        font-weight: bolder;
-        line-height: 5rem;
+      font-size: 2.5rem;
+      font-weight: bolder;
+      line-height: 5rem;
+
+      &--secondary {
+        color: $secondary-color;
+      }
     }
+
     &__corpo {
-        font-size: 1rem;
-        text-align: justify;
-        line-height: 2rem;
-        padding-bottom: 5%;
-        border-bottom: gray solid 2px;
+      font-size: 1rem;
+      text-align: justify;
+      line-height: 2rem;
+      padding-bottom: 5%;
+      border-bottom: $gray-color solid 2px;
     }
-}
+  }
 
-.contato {
+  .contato {
     padding: 0 20%;
-}
+  }
 
-.coluna-texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: justify;
-}
+  .coluna {
+    &--texto {
+      @include flex(column, justify, center);
+    }
 
-.coluna-imagem {
-    border-radius: 0px 0px 80px 80px;
-    background: rgb(178, 206, 249);
-    background: linear-gradient(180deg, white 10%, rgba(247, 248, 251, 0.9948354342) 20%, #dee8f7 100%);
+    &--imagem {
+      border-radius: 0px 0px 80px 80px;
+      background: $background-color;
+      background: $background-gradient;
+    }
+  }
 }

@@ -1,50 +1,77 @@
-    .introducao {
-        background: rgb(178, 206, 249);
-        background: linear-gradient(180deg, rgba(178, 206, 249, 1) 5%, rgba(212, 222, 252, 0.9948354341736695) 100%);
-        width: 100%;
+@import "../../consts.scss";
+@import "../../mixins.scss";
+
+.introducao {
+  background: $background-color;
+  background: $background-gradient;
+  width: 100%;
+
+  &__container {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__informativo {
+    width: 60%;
+
+    &__titulo {
+      font-size: 3rem;
+      font-weight: bolder;
+      line-height: 3rem;
+
+      span {
+        color: $primary-color;
+      }
     }
 
-    .informativo {
-        width: 60%;
-        &__titulo {
-            font-size: 3rem;
-            font-weight: bolder;
-            line-height: 3rem;
-        }
-        &__texto {
-            margin-top: 5%;
-            font-size: 1.2rem;
-            line-height: 2.0rem;
-            color: gray;
-            font-weight: 400;
-        }
-        img {
-            margin-top: 5%;
-            margin-right: 5%;
-            cursor: pointer;
-            width: 100px;
-            height: 30px;
-        }
+    &__texto {
+      margin-top: 5%;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      color: $gray-color;
+      font-weight: 400;
     }
 
-    .feedback {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: #f5f9fe;
-        text-align: center;
-        max-width: 100%;
-        flex-wrap: wrap;
-        span {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-        &__item {
-            padding: 30px 0;
-            max-width: 33.33%;
-            &__texto {
-                font-size: 1.2rem;
-                padding: 5%;
-            }
-        }
+    img {
+      margin-top: 5%;
+      margin-right: 5%;
+      cursor: pointer;
+      width: 100px;
+      height: 30px;
     }
+  }
+}
+
+.feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $feedback-background;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+
+  &__item {
+    padding: 30px 0;
+    max-width: 33.33%;
+
+    span {
+      font-weight: bolder;
+      font-size: 1.5rem;
+      color: $primary-color;
+    }
+
+    &__texto {
+      font-size: 1.2rem;
+      padding: 5%;
+
+      &--border {
+        border-left: $border-introducao;
+        border-right: $border-introducao;
+      }
+    }
+  }
+}

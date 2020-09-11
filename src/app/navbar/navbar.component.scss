@@ -1,64 +1,79 @@
-.ui.menu {
+@import '../../consts.scss';
+
+.ui {
+  &.menu {
     border: 0 none !important;
     box-shadow: none;
+  }
 }
 
 .navbar {
-    background: transparent;
-    top: 0;
-    right: 0;
-    left: 0;
-    justify-content: center;
-    padding: 20px 0;
-    a {
-        font-size: 1rem;
-        font-weight: bold;
-        letter-spacing: 0.2rem;
-    }
+  background: transparent;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  padding: 20px 0;
+
+  a {
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+  }
 }
 
 .logo {
-    padding: 0px 20px;
-    p {
-        font-size: 1.5rem;
-        color: #194990;
-        font-weight: bold;
-        letter-spacing: 0.2rem;
-    }
+  padding: 0px 20px;
+
+  p {
+    font-size: 1.5rem;
+    color: $primary-color;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+  }
 }
 
-.ui.item {
+.ui {
+  &.item {
     width: 200px;
     justify-content: center;
+  }
 }
 
-.ui.primary.basic.button {
-    font-weight: bold;
-    border-radius: 15px;
-    width: 150px;
-    font-size: 1.1rem;
+.ui {
+  &.primary {
+    &.basic {
+      &.button {
+        font-weight: bold;
+        border-radius: 15px;
+        width: 150px;
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 501px) {
-    #menuComputador {
-        margin: 0;
-        visibility: visible;
-    }
-    #menuCelular {
-        display: none;
-    }
+  #meuDesktop {
+    margin: 0;
+    visibility: visible;
+  }
+  #menuSmartphone {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    #menuComputador {
-        display: none;
-    }
-    #menuCelular {
-        visibility: visible;
-        font-size: 0.9rem;
-        margin: 0;
-        background-color: transparent;
-        width: 100%;
-        justify-content: center;
-    }
+  #meuDesktop {
+    display: none;
+  }
+
+  #menuSmartphone {
+    visibility: visible;
+    font-size: 0.9rem;
+    margin: 0;
+    background-color: transparent;
+    width: 100%;
+    justify-content: center;
+  }
 }

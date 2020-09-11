@@ -1,36 +1,48 @@
+@import "../../consts.scss";
+@import "../../mixins.scss";
+
 .feedbacks {
-    padding: 5% 0;
-}
+  padding: 5% 0;
 
-.column {
-    background-color: #f5f9fe;
-}
-
-.titulo {
+  &__titulo {
     text-align: left;
     font-size: 2.5rem;
     font-weight: bolder;
     line-height: 2.8rem;
     padding-left: 15%;
     padding-bottom: 5%;
-}
 
-.texto {
+    span {
+      color: $secondary-color;
+    }
+  }
+
+  &__texto {
     padding-top: 20%;
     display: flex;
     flex-direction: column;
+
     &__citacao {
-        font-size: 1.0rem;
-        line-height: 2.0rem;
+      font-size: 1rem;
+      line-height: 2rem;
     }
+
     &__autor {
-        margin-top: 5%;
-        font-size: 0.8rem;
+      margin-top: 5%;
+      font-size: 0.8rem;
+
+      span {
+        color: $secondary-color;
+      }
     }
+  }
+}
+
+.column {
+  background-color: $tertiary-color;
 }
 
 .imagem {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 10%;
+  @include flex(column, normal, flex-end );
+  margin: 0 10%;
 }
