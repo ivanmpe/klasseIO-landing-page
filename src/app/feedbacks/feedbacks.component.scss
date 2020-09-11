@@ -43,6 +43,5 @@
 }
 
 .imagem {
-  @include flex(column, normal, flex-end );
-  margin: 0 10%;
+  @include flex(column, flex-end, flex-end);
 }
