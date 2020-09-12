@@ -5,6 +5,7 @@
   border-radius: 0px 0px 80px 80px;
   background: $background-color;
   background: linear-gradient(180deg, white 10%, rgba(247, 248, 251, 0.9948354342) 20%, #b2cef9 100%);
+
   .texto {
     padding: 5% 10% 5% 20%;
 
@@ -31,11 +32,15 @@
     &.card {
       border-radius: 20px;
       height: 200px;
-    }
-  }
 
-  .ui.card.content {
-    padding: 15%;
+      &:hover {
+        background-color: #f8f8f8;
+      }
+    }
+
+    &.content {
+      padding: 15%;
+    }
   }
 
   .icon-grid {

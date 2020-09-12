@@ -7,10 +7,7 @@
   width: 100%;
 
   &__container {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center);
   }
 
   &__informativo {
@@ -45,9 +42,7 @@
 }
 
 .feedback {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include flex(row, stretch, center);
   background-color: $feedback-background;
   text-align: center;
   width: 100%;
